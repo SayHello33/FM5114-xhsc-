@@ -1,0 +1,22 @@
+--cpu Cortex-M0+
+".\output\release\startup_hc32l021.o"
+".\output\release\system_hc32l021.o"
+".\output\release\interrupts_hc32l021.o"
+".\output\release\board_stkhc32l021.o"
+".\output\release\ddl.o"
+".\output\release\sysctrl.o"
+".\output\release\gpio.o"
+".\output\release\flash.o"
+".\output\release\hsi2c.o"
+".\output\release\lpuart.o"
+".\output\release\main.o"
+".\output\release\uart.o"
+".\output\release\fm5114.o"
+".\output\release\lpcd_api.o"
+".\output\release\mifare.o"
+".\output\release\reader_api.o"
+".\output\release\defin.o"
+--library_type=microlib --strict --scatter ".\output\release\hsi2c_mcu_master_poll.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --symbols
+--info sizes --info totals
+--list ".\output\release\hsi2c_mcu_master_poll.map" -o .\output\release\hsi2c_mcu_master_poll.axf
