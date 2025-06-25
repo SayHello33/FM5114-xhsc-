@@ -80,6 +80,17 @@ uint8_t u8TxData[2]               = {0x55, 0xAA};
  * @brief  Main function
  * @retval int32_t return value, if needed
  */
+// 手动设置单个按键阈值
+void SetButtonThreshold(uint8_t channel, uint8_t threshold)
+{
+    // 计算寄存器地址: 0x20 + channel
+    uint8_t reg_addr = Button0_Touch_Thrsh + channel;
+    
+    // 设置阈值
+    SetReg(TOUCH_I2C_Address, reg_addr, threshold);
+    
+    log_printf("Set Ch%d Thrsh: 0x%X\n", channel, threshold);
+}
 
 int32_t main(void)
 {
@@ -142,7 +153,14 @@ GpioConfig();
 	Lpcd_Set_Mode(ENABLE); //LPCD使能
 	DDL_Delay1ms(5); // 等待复位完成
 	Scan_Start();  //启动扫描
-	
+	// 在无卡环境下读取噪声信号幅度
+//	while(1)
+//	{
+//Lpcd_Get_ADC_Value();
+//		DDL_Delay1ms(300);
+//	
+//	}
+
 
 //		while(1)
 //	{
@@ -150,13 +168,36 @@ GpioConfig();
 //	DDL_Delay1ms(500);
 //	
 //	}
+uint8_t current_threshold;
+GetReg(TOUCH_I2C_Address, Button9_Touch_Thrsh, &current_threshold);
+log_printf("thresholod %x \r\n",current_threshold);
+// 计算新阈值（降低25%）
+uint8_t new_threshold = current_threshold * 0.45;
 
+// 设置新阈值
+SetReg(TOUCH_I2C_Address, Button7_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button5_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button6_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button9_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button4_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button3_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button10_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button2_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button11_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button12_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button1_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button0_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button13_Touch_Thrsh, new_threshold);
+SetReg(TOUCH_I2C_Address, Button8_Touch_Thrsh, new_threshold);
+log_printf("Ch9 Thrsh: 0x%X -> 0x%X\n", current_threshold, new_threshold);
 	
 DDL_Delay1ms(1000);
 
 
-
-
+//	while(1)
+//	{
+//		FM5114_Sensor_Debug(9);
+//	}
 
 
 	while(1)

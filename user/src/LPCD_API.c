@@ -53,14 +53,14 @@ unsigned char Lpcd_Init_Register(void)
 		SetReg_Ext(READER_I2C_Address,0x25, 0x3A);//请勿修改
 	
 		uint8_t reg=0;
-
-	while(reg==0x00)
-	{
-			SetReg_Ext(READER_I2C_Address,JREG_LPCDCTRLMODE, RF_DET_DISABLE|RF_DET_SEN_00|LPCD_ENABLE);//场检测使能，场检测灵敏度0，LPCD使能
-			GetReg_Ext(READER_I2C_Address,JREG_LPCDCTRLMODE,&reg);
-		log_printf("JREG_LPCDCTRLMODE %x \r\n",reg);
-	}
-				
+	SetReg_Ext(READER_I2C_Address,JREG_LPCDCTRLMODE, RF_DET_DISABLE|RF_DET_SEN_11|LPCD_ENABLE);//场检测使能，场检测灵敏度0，LPCD使能
+//	while(reg==0x00)
+//	{
+////			SetReg_Ext(READER_I2C_Address,JREG_LPCDCTRLMODE, RF_DET_DISABLE|RF_DET_SEN_11|LPCD_ENABLE);//场检测使能，场检测灵敏度0，LPCD使能
+//			GetReg_Ext(READER_I2C_Address,JREG_LPCDCTRLMODE,&reg);
+//		log_printf("JREG_LPCDCTRLMODE %x \r\n",reg);
+//	}
+//				
 		
 		SetReg_Ext(READER_I2C_Address,JREG_LPCDRFTIMER, LPCD_IRQINV_ENABLE|LPCD_IRQ_PUSHPULL|LPCD_RFTIME_5us);//探测使用5us，LPCD探测总时间18us
 
@@ -73,7 +73,7 @@ unsigned char Lpcd_Init_Register(void)
 		SetReg_Ext(READER_I2C_Address,JREG_LPCDTXCTRL3, LPCD_CWN);//设置LPCD输出N驱动
 		SetReg_Ext(READER_I2C_Address,JREG_LPCDREQATIMER,LPCD_REQA_TIME_5ms);//REQA检测载波时间,5ms兼容手机方案
 		
-		SetReg_Ext(READER_I2C_Address,JREG_LPCDREQAANA,LPCD_RXGAIN_43DB | LPCD_MINLEVEL_9 | LPCD_MODWIDTH_38);//配置REQA检测命令的接收增益，接收阈值，调制宽度
+		SetReg_Ext(READER_I2C_Address,JREG_LPCDREQAANA,LPCD_RXGAIN_33DB | LPCD_MINLEVEL_9 | LPCD_MODWIDTH_38);//配置REQA检测命令的接收增益，接收阈值，调制宽度
 		SetReg_Ext(READER_I2C_Address,JREG_LPCDDETECTMODE,LPCD_TXSCALE_4 | LPCD_COMBINE_MODE);//配置REQA检测发射功率与探测输出场强的比例，LCPD探测模式设置
 		return SUCCESS;
 

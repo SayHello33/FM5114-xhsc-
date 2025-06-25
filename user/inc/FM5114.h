@@ -21,8 +21,8 @@
 #define BUTTON_CHANNEL       0x3FFF //3FFF为14通道使能
 #define SENSE_MODE           1			//增强模式，默认值为1，使能增强模式
 #define GROUP_BUTTON_EN      0			//S5,S6通道组合按键功能
-#define SCAN_PERIOD 14 //0:20ms 1:40ms 2:60ms...14:300ms...  24:500ms  25~31:1S
-#define GLOBAL_HYS	10 //设置范围0~31  按键传感器触摸阈值迟滞
+#define SCAN_PERIOD 16 //0:20ms 1:40ms 2:60ms...14:300ms...  24:500ms  25~31:1S
+#define GLOBAL_HYS	8 //设置范围0~31  按键传感器触摸阈值迟滞
 #define LPCD_TIMER_EN  1
 #define TOUCH_TIMEOUT 0 //0~3 0:2s,1:5s,2:10s,3:15s	
 #define INTT_MODE 1

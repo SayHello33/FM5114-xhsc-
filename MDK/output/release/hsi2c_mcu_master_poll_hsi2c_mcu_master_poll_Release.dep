@@ -177,8 +177,7 @@ I (..\..\..\..\driver\inc\sysctrl.h)(0x67EE3D88)
 I (..\..\..\..\mcu\common\system_hc32l021.h)(0x67EE3D89)
 I (..\source\ddl_device.h)(0x67EE44C3)
 F (..\..\..\..\driver\inc\lpuart.h)(0x67EE3D88)()
-F (..\readme.txt)(0x67EE3D87)()
-F (..\source\main.c)(0x685A11E8)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../../../mcu/common -I ../source -I ../../../../driver/inc -I ../user/inc -I ../user/src-I./RTE/_hsi2c_mcu_master_poll_Release-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.2.0/CMSIS/Include-IC:/Keil_v5/ARM/PACK/HDSC/HC32L02x/1.0.0/Device/Include-D__UVISION_VERSION="525" -D_RTE_ -DHC32L021C8PB-o ./output/release/main.o -MD)
+F (..\source\main.c)(0x685B8846)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../../../mcu/common -I ../source -I ../../../../driver/inc -I ../user/inc -I ../user/src-I./RTE/_hsi2c_mcu_master_poll_Release-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.2.0/CMSIS/Include-IC:/Keil_v5/ARM/PACK/HDSC/HC32L02x/1.0.0/Device/Include-D__UVISION_VERSION="525" -D_RTE_ -DHC32L021C8PB-o ./output/release/main.o -MD)
 I (..\..\..\..\driver\inc\flash.h)(0x67EE3D88)
 I (..\..\..\..\driver\inc\ddl.h)(0x67EE3D88)
 I (..\..\..\..\mcu\common\base_types.h)(0x67EE3D89)
@@ -204,12 +203,13 @@ I (..\..\..\..\driver\inc\lpm.h)(0x67EE3D88)
 I (..\..\..\..\driver\inc\lpuart.h)(0x67EE3D88)
 I (..\user\inc\uart.h)(0x684F71CB)
 I (..\user\inc\MIFARE.h)(0x5E5326F9)
-I (..\user\inc\FM5114.h)(0x6859FFC6)
+I (..\user\inc\FM5114.h)(0x685B8790)
 I (..\user\inc\FM5114_REG.h)(0x685119A7)
 I (..\user\inc\READER_API.h)(0x6850FA2B)
-I (..\user\inc\DEFINE.h)(0x68592667)
+I (..\user\inc\DEFINE.h)(0x685A18F0)
 I (..\user\inc\LPCD_API.h)(0x685921C3)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x595162DE)
+F (..\readme.txt)(0x67EE3D87)()
 F (..\user\src\uart.c)(0x6854CEA5)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../../../mcu/common -I ../source -I ../../../../driver/inc -I ../user/inc -I ../user/src-I./RTE/_hsi2c_mcu_master_poll_Release-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.2.0/CMSIS/Include-IC:/Keil_v5/ARM/PACK/HDSC/HC32L02x/1.0.0/Device/Include-D__UVISION_VERSION="525" -D_RTE_ -DHC32L021C8PB-o ./output/release/uart.o -MD)
 I (..\user\inc\uart.h)(0x684F71CB)
 I (..\..\..\..\mcu\common\hc32l021.h)(0x67EE3D89)
@@ -236,7 +236,7 @@ I (..\..\..\..\driver\inc\gpio.h)(0x67EE3D88)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x595162DE)
 F (..\user\inc\uart.h)(0x684F71CB)()
 F (..\user\src\FM5114.c)(0x685A06EE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../../../mcu/common -I ../source -I ../../../../driver/inc -I ../user/inc -I ../user/src-I./RTE/_hsi2c_mcu_master_poll_Release-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.2.0/CMSIS/Include-IC:/Keil_v5/ARM/PACK/HDSC/HC32L02x/1.0.0/Device/Include-D__UVISION_VERSION="525" -D_RTE_ -DHC32L021C8PB-o ./output/release/fm5114.o -MD)
-I (..\user\inc\DEFINE.h)(0x68592667)
+I (..\user\inc\DEFINE.h)(0x685A18F0)
 I (..\user\inc\LPCD_API.h)(0x685921C3)
 I (..\..\..\..\driver\inc\gpio.h)(0x67EE3D88)
 I (..\..\..\..\driver\inc\ddl.h)(0x67EE3D88)
@@ -264,12 +264,12 @@ I (..\..\..\..\driver\inc\lpm.h)(0x67EE3D88)
 I (..\..\..\..\driver\inc\lpuart.h)(0x67EE3D88)
 I (..\user\inc\uart.h)(0x684F71CB)
 I (..\user\inc\READER_API.h)(0x6850FA2B)
-I (..\user\inc\FM5114.h)(0x6859FFC6)
-F (..\user\src\LPCD_API.c)(0x685A08C7)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../../../mcu/common -I ../source -I ../../../../driver/inc -I ../user/inc -I ../user/src-I./RTE/_hsi2c_mcu_master_poll_Release-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.2.0/CMSIS/Include-IC:/Keil_v5/ARM/PACK/HDSC/HC32L02x/1.0.0/Device/Include-D__UVISION_VERSION="525" -D_RTE_ -DHC32L021C8PB-o ./output/release/lpcd_api.o -MD)
-I (..\user\inc\LPCD_CFG.h)(0x685922F6)
+I (..\user\inc\FM5114.h)(0x685B8790)
+F (..\user\src\LPCD_API.c)(0x685B55D1)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../../../mcu/common -I ../source -I ../../../../driver/inc -I ../user/inc -I ../user/src-I./RTE/_hsi2c_mcu_master_poll_Release-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.2.0/CMSIS/Include-IC:/Keil_v5/ARM/PACK/HDSC/HC32L02x/1.0.0/Device/Include-D__UVISION_VERSION="525" -D_RTE_ -DHC32L021C8PB-o ./output/release/lpcd_api.o -MD)
+I (..\user\inc\LPCD_CFG.h)(0x685B5543)
 I (..\user\inc\LPCD_API.h)(0x685921C3)
 I (..\user\inc\FM5114_REG.h)(0x685119A7)
-I (..\user\inc\FM5114.h)(0x6859FFC6)
+I (..\user\inc\FM5114.h)(0x685B8790)
 I (..\user\inc\DEVICE_CFG.h)(0x684A96B4)
 I (..\user\inc\uart.h)(0x684F71CB)
 I (..\..\..\..\mcu\common\hc32l021.h)(0x67EE3D89)
@@ -292,17 +292,17 @@ I (..\..\..\..\mcu\common\interrupts_hc32l021.h)(0x67EE3D89)
 I (..\..\..\..\driver\inc\sysctrl.h)(0x67EE3D88)
 I (..\..\..\..\mcu\common\system_hc32l021.h)(0x67EE3D89)
 I (..\source\ddl_device.h)(0x67EE44C3)
-I (..\user\inc\DEFINE.h)(0x68592667)
+I (..\user\inc\DEFINE.h)(0x685A18F0)
 I (..\..\..\..\driver\inc\gpio.h)(0x67EE3D88)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x595162DE)
 F (..\user\src\MIFARE.c)(0x684AA41E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../../../mcu/common -I ../source -I ../../../../driver/inc -I ../user/inc -I ../user/src-I./RTE/_hsi2c_mcu_master_poll_Release-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.2.0/CMSIS/Include-IC:/Keil_v5/ARM/PACK/HDSC/HC32L02x/1.0.0/Device/Include-D__UVISION_VERSION="525" -D_RTE_ -DHC32L021C8PB-o ./output/release/mifare.o -MD)
 I (..\user\inc\MIFARE.h)(0x5E5326F9)
-I (..\user\inc\FM5114.h)(0x6859FFC6)
+I (..\user\inc\FM5114.h)(0x685B8790)
 I (..\user\inc\Reader_API.h)(0x6850FA2B)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x595162DE)
 I (..\user\inc\FM5114_REG.h)(0x685119A7)
 I (..\user\inc\DEVICE_CFG.h)(0x684A96B4)
-I (..\user\inc\DEFINE.h)(0x68592667)
+I (..\user\inc\DEFINE.h)(0x685A18F0)
 I (..\user\inc\LPCD_API.h)(0x685921C3)
 I (..\..\..\..\driver\inc\gpio.h)(0x67EE3D88)
 I (..\..\..\..\driver\inc\ddl.h)(0x67EE3D88)
@@ -328,8 +328,8 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x595162DE)
 I (..\user\inc\DEVICE_CFG.h)(0x684A96B4)
 I (..\user\inc\FM5114_REG.h)(0x685119A7)
 I (..\user\inc\READER_API.h)(0x6850FA2B)
-I (..\user\inc\FM5114.h)(0x6859FFC6)
-I (..\user\inc\DEFINE.h)(0x68592667)
+I (..\user\inc\FM5114.h)(0x685B8790)
+I (..\user\inc\DEFINE.h)(0x685A18F0)
 I (..\user\inc\LPCD_API.h)(0x685921C3)
 I (..\..\..\..\driver\inc\gpio.h)(0x67EE3D88)
 I (..\..\..\..\driver\inc\ddl.h)(0x67EE3D88)
@@ -352,15 +352,15 @@ I (..\source\ddl_device.h)(0x67EE44C3)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x595162DE)
 I (..\user\inc\UART.h)(0x684F71CB)
 F (..\user\inc\CPU_CARD.h)(0x5CF721CA)()
-F (..\user\inc\DEFINE.h)(0x68592667)()
-F (..\user\inc\FM5114.h)(0x6859FFC6)()
+F (..\user\inc\DEFINE.h)(0x685A18F0)()
+F (..\user\inc\FM5114.h)(0x685B8790)()
 F (..\user\inc\FM5114_REG.h)(0x685119A7)()
 F (..\user\inc\LPCD_API.h)(0x685921C3)()
-F (..\user\inc\LPCD_CFG.h)(0x685922F6)()
+F (..\user\inc\LPCD_CFG.h)(0x685B5543)()
 F (..\user\inc\MIFARE.h)(0x5E5326F9)()
 F (..\user\inc\READER_API.h)(0x6850FA2B)()
 F (.\DEFIN.c)(0x6858FF8D)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../../../mcu/common -I ../source -I ../../../../driver/inc -I ../user/inc -I ../user/src-I./RTE/_hsi2c_mcu_master_poll_Release-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.2.0/CMSIS/Include-IC:/Keil_v5/ARM/PACK/HDSC/HC32L02x/1.0.0/Device/Include-D__UVISION_VERSION="525" -D_RTE_ -DHC32L021C8PB-o ./output/release/defin.o -MD)
-I (..\user\inc\DEFINE.h)(0x68592667)
+I (..\user\inc\DEFINE.h)(0x685A18F0)
 I (..\user\inc\LPCD_API.h)(0x685921C3)
 I (..\..\..\..\driver\inc\gpio.h)(0x67EE3D88)
 I (..\..\..\..\driver\inc\ddl.h)(0x67EE3D88)

@@ -12,7 +12,7 @@
 
 /*FM5114LPCD参数配置*/
 
-#define	LPCD_THRSH        0x10
+#define	LPCD_THRSH        0x32
 #define LPCD_CWP     		     16   //LPCD PMOS输出驱动 0~63
 #define	LPCD_CWN    		     4    //LPCD NMOS输出驱动 0~15
 

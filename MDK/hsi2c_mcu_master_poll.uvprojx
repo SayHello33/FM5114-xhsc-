@@ -449,6 +449,11 @@
           <GroupName>README</GroupName>
           <Files>
             <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\source\main.c</FilePath>
+            </File>
+            <File>
               <FileName>readme.txt</FileName>
               <FileType>5</FileType>
               <FilePath>..\readme.txt</FilePath>
@@ -458,11 +463,6 @@
         <Group>
           <GroupName>user</GroupName>
           <Files>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\source\main.c</FilePath>
-            </File>
             <File>
               <FileName>uart.c</FileName>
               <FileType>1</FileType>
