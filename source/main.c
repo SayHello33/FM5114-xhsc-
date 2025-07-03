@@ -198,7 +198,17 @@ DDL_Delay1ms(1000);
 //	{
 //		FM5114_Sensor_Debug(9);
 //	}
+// 1. 禁用睡眠模式 + 启动扫描
+SetReg(TOUCH_I2C_Address, 0x0A, 0x80);  // Bit7=1(启动), Bit6=0(禁用睡眠)
 
+//// 2. 设置扫描周期（示例：40ms）
+//SetReg(TOUCH_I2C_Address, 0x3E, 0x01);   // 0x01 = 40ms
+
+//// 3. 循环触发扫描（防止自动休眠）
+//while (1) {
+//    SetReg(TOUCH_I2C_Address, 0x0A, 0x80); // 每次循环重新启动扫描
+//    DDL_Delay1ms(400);                      // 按周期等待
+//}
 
 	while(1)
 	{	
